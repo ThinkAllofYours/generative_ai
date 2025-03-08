@@ -36,8 +36,8 @@ def show_next_token_choices(probabilities, tokenizer, top_n=5):
 def main():
     # GPT-2 모델과 토크나이저 로드
     print("모델과 토크나이저를 로딩중...")
-    tokenizer = AutoTokenizer.from_pretrained("gpt2")
-    model = AutoModelForCausalLM.from_pretrained("gpt2")
+    tokenizer = AutoTokenizer.from_pretrained("distilgpt2")
+    model = AutoModelForCausalLM.from_pretrained("distilgpt2")
 
     # 초기 텍스트 설정
     text = "Udacity is the best place to learn about generative"
